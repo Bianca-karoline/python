@@ -1,19 +1,40 @@
-print("---------------------- Media Aritimetica--------------------------")
-n1 = float(input("Digite a primeira nota do aluno: "))
-n2 = float(input("Digite a segunda nota do aluno: "))
-print("A média das notas {} e {} é {}.\n".format(n1, n2, ((n1+n2)/2)))
-print("----------------------- Conversor de Medidas -------------------------")
-medida = float(input("Digite a medida em metros: "))
-print("A medida de {}m corresponde a\n{} km\n{}hm\n{}dam\n{}dm\n{}cm\n{}mm\n".format(medida,(medida/1000),(medida/100),(medida/10),(medida*10),(medida*100),(medida*1000)))
-print("---------------------- Conversor de Moedas --------------------------")
-m = float(input("Digite a quantidade de dinheiro"))
-print("Com R${} você pode comprar U${}".format(m, (m/3.27)))
-print("---------------------- Calculadora de Desconto --------------------------")
-valor = float(input("Digite o valor do produto: "))
-desconto = float(input("Digite a porcentagem do desconto: "))
-print("O valor do produto é {}, com desconto o produto custa {}".format(valor,(valor*(1-desconto/100))))
-print("--------------------- Aluguel de Carros ---------------------------")
-d = int(input("Quantos dias alugado: "))
-km = float(input("Quantidade de quilometros rodados: "))
-print("O total a pagar é de R${}".format((60*d)+(km*0.15)))
+"""import math
+print("-------------- Exercício 18 ----------------")
+angulo = int(input("Digite o angulo: "))
+sen = math.sin(angulo)
+cos = math.cos(angulo)
+tan = math.tan(angulo)
+print("Seno: {}\nCosseno: {}\nTangente: {}\n".format(sen, cos,tan))
+"""
+'''print("-------- Exercício 19 ---------------------")
+import random
+nomes = [str(input("Digite os nomes: ")), str(input("Digite os nomes: ")), str(input("Digite os nomes: ")), str(input("Digite os nomes: "))]
+print(random.choice(nomes))
 
+print("---------------- Exercício 20 ------------------")
+random.shuffle(nomes)
+print(nomes)'''
+'''print("-------------- Exercício 21 ---------------")
+import pygame
+usa o pacote pygame para abrir um arquivo MP3 externo
+pygame.init()
+pygame.mixer.music.load('audio.mp3')
+pygame.mixer.music.play()
+pygame.event.wait()
+'''
+texto = "Curso em video python"
+'''começo e fim da cadeia de caracteres'''
+print(texto[0:9]) 
+"""começo, fim e quantidade de casas para andar"""
+print(texto[9:21:2])
+print(texto[9::3])
+'''determina o fim'''
+print(texto[:9])
+'''determina o começo'''
+print(texto[9:])
+'''tamanho do texto'''
+len(texto)
+'''conta os caracteres de comparação'''
+texto.count("o")
+'''conta os caracteres entre os intervalos'''
+texto.count("o", 0,13)
